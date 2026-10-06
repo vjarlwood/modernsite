@@ -1,0 +1,7 @@
+# Hostinger Apache / LiteSpeed static website
+DirectoryIndex index.html
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js|css)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
